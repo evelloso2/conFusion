@@ -1,3 +1,10 @@
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
 .row-header{
     margin:0px auto;
     padding:0px;
