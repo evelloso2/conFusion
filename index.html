@@ -34,7 +34,7 @@
                 </ul>
 
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="btn-login">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
 
@@ -173,7 +173,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center mt-4">
-                    <a class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reservation-modal">Reserve Table</a>
+                    <a id="btn-reserv" class="btn btn-block nav-link btn-warning">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -318,6 +318,17 @@
             });
       });
   </script>
+  <script>
+    $(document).ready(function(){
+        $("#btn-reserv").click(function(){
+            $("#reservation-modal").modal('show');
+        });
+        $("#btn-login").click(function(){
+            $("#loginModal").modal('show');
+        });
+
+    });
+</script>
     
 </body>
 
